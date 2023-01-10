@@ -1,0 +1,310 @@
+.container {
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .set_map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .set_map .set_map_body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.container .set_map .set_map_buttons {
+  padding-top: 40px;
+}
+
+.container .set_map .map_table_container .map_table td {
+  border: 1px solid black;
+  width: 20px;
+  height: 20px;
+}
+
+.container .set_map .map_table_container .map_table .selecting {
+  background-color: red;
+}
+
+.container .set_map .map_table_container .map_table .pre_near_selected {
+  background-color: rgba(128, 128, 128, 0.5);
+}
+
+.container .set_map .map_table_container .map_table .near_selected {
+  background-color: gray;
+}
+
+.container .set_map .map_table_container .map_table .selected {
+  background-color: #7eb5c5;
+}
+
+.container .set_map .warships_port {
+  width: 250px;
+}
+
+.container .set_map .warships_port .warship {
+  outline: 1px solid black;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+}
+
+.container .set_map .warships_port .warship:hover {
+  outline: 2px solid black;
+}
+
+.container .set_map .warships_port .warship .warship_part {
+  height: 20px;
+  width: 20px;
+}
+
+.container .set_map .warships_port .selected {
+  background-color: black;
+}
+
+.container .set_map .warships_port .on_map {
+  display: none;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  padding-top: 40px;
+}
+
+.menu .menu_first_buttons {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menu .menu_first_buttons button {
+  margin-top: 20px;
+}
+
+.menu .game_type {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menu .game_type button {
+  margin-top: 20px;
+}
+
+.game {
+  display: none;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.game .winner {
+  display: none;
+  padding-top: 20px;
+}
+
+.game .player_id {
+  padding-bottom: 20px;
+}
+
+.game .game_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+}
+
+.game .go_to_menu {
+  display: none;
+}
+
+.game .enemy_side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.game .enemy_side .map_table td:hover {
+  background-color: rgba(128, 128, 128, 0.5);
+}
+
+.game .player_side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.game .map_table td {
+  border: 1px solid black;
+  width: 20px !important;
+  height: 20px !important;
+  padding: 0;
+}
+
+.game .map_table .selecting {
+  background-color: red;
+}
+
+.game .map_table .pre_near_selected {
+  background-color: rgba(128, 128, 128, 0.5);
+}
+
+.game .map_table .near_selected {
+  background-color: gray;
+}
+
+.game .map_table .selected {
+  background-color: #7eb5c5;
+}
+
+.game .map_table .attacked {
+  background-color: gray;
+}
+
+.game .blur_maps {
+  display: none;
+}
+
+.game .go_to_menu_btn {
+  display: none;
+}
+
+.destroyed {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+.destroyed:before,
+.destroyed:after {
+  position: absolute;
+  content: ' ';
+  height: 20px;
+  width: 2px;
+  background-color: red;
+  left: 8.5px;
+  top: 0px;
+}
+
+.destroyed:before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.destroyed:after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.next_maps {
+  display: none;
+  padding-top: 80px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=style.css.map */

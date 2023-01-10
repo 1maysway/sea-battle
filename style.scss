@@ -1,0 +1,205 @@
+.container {
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .set_map {
+        display: flex;
+        display: none;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+        .set_map_body {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+        }
+        .set_map_buttons {
+            padding-top: 40px;
+        }
+        .map_table_container {
+            .map_table {
+                td {
+                    border: 1px solid black;
+                    width: 20px;
+                    height: 20px;
+                    &:hover {
+                        //background-color: gray;
+                    }
+                }
+                .cell {}
+                .selecting {
+                    background-color: red;
+                }
+                .pre_near_selected {
+                    background-color: rgba(128, 128, 128, 0.5);
+                }
+                .near_selected {
+                    background-color: gray;
+                }
+                .selected {
+                    background-color: rgb(126, 181, 197);
+                }
+            }
+        }
+        .warships_port {
+            width: 250px;
+            .warship {
+                outline: 1px solid black;
+                &:hover {
+                    outline: 2px solid black;
+                }
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                flex-basis: auto;
+                .warship_part {
+                    height: 20px;
+                    width: 20px;
+                }
+            }
+            .selected {
+                background-color: black;
+            }
+            .on_map {
+                display: none;
+            }
+        }
+    }
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 40px;
+    .menu_first_buttons {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        button {
+            margin-top: 20px;
+        }
+    }
+    .game_type {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        button {
+            margin-top: 20px;
+        }
+    }
+}
+
+.game {
+    display: none;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .winner {
+        display: none;
+        padding-top: 20px;
+    }
+    .player_id {
+        padding-bottom: 20px;
+    }
+    .game_inner {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .go_to_menu {
+        display: none;
+    }
+    .enemy_side {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .map_table {
+            td {
+                &:hover {
+                    background-color: rgba(128, 128, 128, 0.5);
+                }
+            }
+        }
+    }
+    .player_side {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .map_table {
+        td {
+            border: 1px solid black;
+            width: 20px !important;
+            height: 20px !important;
+            padding: 0;
+        }
+        .cell {}
+        .selecting {
+            background-color: red;
+        }
+        .pre_near_selected {
+            background-color: rgba(128, 128, 128, 0.5);
+        }
+        .near_selected {
+            background-color: gray;
+        }
+        .selected {
+            background-color: rgb(126, 181, 197);
+        }
+        .attacked {
+            background-color: gray;
+        }
+    }
+    .blur_maps {
+        display: none;
+    }
+    .go_to_menu_btn {
+        display: none;
+    }
+}
+
+.destroyed {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    &:hover {}
+}
+
+.destroyed:before,
+.destroyed:after {
+    position: absolute;
+    content: ' ';
+    height: 20px;
+    width: 2px;
+    background-color: red;
+    left: 8.5px;
+    top: 0px;
+}
+
+.destroyed:before {
+    transform: rotate(45deg);
+}
+
+.destroyed:after {
+    transform: rotate(-45deg);
+}
+
+.next_maps {
+    display: none;
+    padding-top: 80px;
+    justify-content: center;
+    align-items: center;
+}
